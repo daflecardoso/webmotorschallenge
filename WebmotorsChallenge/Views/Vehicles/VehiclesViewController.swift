@@ -37,6 +37,8 @@ class VehiclesViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
+        viewModel.fetch()
     }
     
     private func setup() {
@@ -50,7 +52,10 @@ class VehiclesViewController: BaseViewController {
     }
     
     private func setupConstraints() {
-        view.addSubview(tableView) { $0.edges.equalToSuperview() }
+        view.addSubview(tableView) {
+            $0.leading.trailing.bottomMargin.equalToSuperview()
+            $0.topMargin.equalToSuperview()
+        }
         view.addSubview(footerView) {
             $0.leading.trailing.bottom.equalToSuperview().inset(16)
             $0.height.equalTo(44)
@@ -91,7 +96,7 @@ class VehiclesViewController: BaseViewController {
 extension VehiclesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        push(coordinator.makeVechicleDetailViewController())
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

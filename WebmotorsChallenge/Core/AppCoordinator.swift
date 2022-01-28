@@ -18,12 +18,6 @@ class AppCoordinator {
         self.window = window
     }
     
-    private func makeVehiclesViewController() -> VehiclesViewController {
-        let vehicleService = VehicleService()
-        let viewModel = VehiclesViewModel(vehicleService: vehicleService)
-        return VehiclesViewController(viewModel: viewModel)
-    }
-    
     func start() {
         self.navigateToHome()
     }
@@ -33,5 +27,16 @@ class AppCoordinator {
             rootViewController: makeVehiclesViewController()
         )
         window.makeKeyAndVisible()
+    }
+    
+    private func makeVehiclesViewController() -> VehiclesViewController {
+        let vehicleService = VehicleService()
+        let viewModel = VehiclesViewModel(vehicleService: vehicleService)
+        return VehiclesViewController(viewModel: viewModel)
+    }
+    
+    func makeVechicleDetailViewController() -> VechicleDetailViewController {
+        let viewModel = VehicleDetailViewModel()
+        return VechicleDetailViewController(viewModel: viewModel)
     }
 }

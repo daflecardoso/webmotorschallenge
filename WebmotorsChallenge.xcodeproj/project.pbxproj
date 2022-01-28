@@ -50,6 +50,8 @@
 		D2427D3627A49483001FD697 /* VehiclesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3527A49483001FD697 /* VehiclesCell.swift */; };
 		D2427D3827A49763001FD697 /* TableLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */; };
 		D2427D3A27A49E91001FD697 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3927A49E91001FD697 /* DefaultNavigationController.swift */; };
+		D2427D3D27A49FA8001FD697 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3C27A49FA8001FD697 /* VehicleDetailViewController.swift */; };
+		D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		D2427D3527A49483001FD697 /* VehiclesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesCell.swift; sourceTree = "<group>"; };
 		D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLoadingFooterView.swift; sourceTree = "<group>"; };
 		D2427D3927A49E91001FD697 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
+		D2427D3C27A49FA8001FD697 /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
+		D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModel.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				D2427D3427A493E8001FD697 /* Vehicles */,
+				D2427D3B27A49F97001FD697 /* VehicleDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +365,15 @@
 				D2427D3527A49483001FD697 /* VehiclesCell.swift */,
 			);
 			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		D2427D3B27A49F97001FD697 /* VehicleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D2427D3C27A49FA8001FD697 /* VehicleDetailViewController.swift */,
+				D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */,
+			);
+			path = VehicleDetail;
 			sourceTree = "<group>";
 		};
 		FD380CCF8916C657224CCF75 /* Frameworks */ = {
@@ -613,6 +627,7 @@
 			files = (
 				D2427D3627A49483001FD697 /* VehiclesCell.swift in Sources */,
 				D2427D2127A477CB001FD697 /* Vehicle.swift in Sources */,
+				D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */,
 				D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */,
 				D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */,
 				D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */,
@@ -639,6 +654,7 @@
 				D2427CFE27A46C61001FD697 /* UIViewExtensions.swift in Sources */,
 				D2427CFB27A46C61001FD697 /* StringExtensions.swift in Sources */,
 				D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */,
+				D2427D3D27A49FA8001FD697 /* VehicleDetailViewController.swift in Sources */,
 				D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */,
 				D2427CF827A46C61001FD697 /* UITextFieldExtensions.swift in Sources */,
 				D2427D1227A4769D001FD697 /* APIProvider.swift in Sources */,
