@@ -58,9 +58,45 @@ extension UIColor {
         }
     }()
     
+    static var cardColor: UIColor = {
+    
+        let light: UIColor = .white
+        
+        let dark = UIColor(red: 25, green: 26, blue: 27)
+        
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return dark
+                } else {
+                    return light
+                }
+            }
+        } else {
+            return light
+        }
+    }()
+    
     public static var defaultRed: UIColor {
         return UIColor(red: 155, green: 9, blue: 26)
     }
+    
+    static var backgroundContainerViews: UIColor = {
+        let dark = UIColor(red: 17, green: 18, blue: 19)
+        
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return dark
+                } else {
+                    return .white
+                }
+            }
+        } else {
+            return .white
+        }
+    }()
+    
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

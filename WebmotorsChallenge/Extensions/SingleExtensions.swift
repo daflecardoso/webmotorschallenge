@@ -10,6 +10,16 @@ import RxCocoa
 
 extension PrimitiveSequence where Trait == SingleTrait {
     
+    func paginating(_ isPaginating: PublishSubject<Bool>) -> PrimitiveSequence<SingleTrait, Element> {
+        return self.do(onSuccess: { _ in
+            isPaginating.onNext(false)
+        }, onError: { _ in
+            isPaginating.onNext(false)
+        }, onSubscribe: {
+            isPaginating.onNext(true)
+        })
+    }
+    
     func loading(_ isloading: PublishSubject<Bool>) -> PrimitiveSequence<SingleTrait, Element> {
         return self.do(onSuccess: { _ in
             isloading.onNext(false)

@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  VehiclesCell.swift
 //  WebmotorsChallenge
 //
 //  Created by Dafle on 28/01/22.
@@ -8,91 +8,15 @@
 import Foundation
 import UIKit
 
-class HomeViewController: BaseViewController {
+extension VehiclesViewController {
     
-    private let cells = [
-        VehicleCell.self,
-    ]
-    
-    private lazy var tableView = UITableView().apply {
-        $0.register(cellTypes: cells)
-        $0.separatorStyle = .none
-        $0.refreshControl = refreshControl
-        $0.delegate = self
-        $0.dataSource = self
-    }
-    
-    private let refreshControl = UIRefreshControl()
-    
-    override var baseViewModel: BaseViewModel? { viewModel }
-    private let viewModel: HomeViewModel
-    
-    init(viewModel: HomeViewModel) {
-        self.viewModel = viewModel
-        super.init()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setup()
-        
-        viewModel.fetch()
-    }
-    
-    private func setup() {
-        setupView()
-        setupConstraints()
-        setupBinds()
-    }
-    
-    private func setupView() {
-        self.title = "Veículos"
-    }
-    
-    private func setupConstraints() {
-        view.addSubview(tableView) {
-            $0.edges.equalToSuperview()
-        }
-    }
-    
-    private func setupBinds() {
-        viewModel
-            .reload
-            .drive(onNext: { [unowned self] in
-                tableView.reloadData()
-            }).disposed(by: disposeBag)
-    }
-}
-
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.items.count
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: VehicleCell.self, for: indexPath)
-        let item = viewModel.items[indexPath.row]
-        cell.set(with: item)
-        return cell
-    }
-}
-
-extension HomeViewController {
-    
-    private class VehicleCell: BaseTableViewCell {
+    class VehicleCell: BaseTableViewCell {
         
         private lazy var containerView = UIView().apply {
-            $0.backgroundColor = .white
+            $0.backgroundColor = .cardColor
         }
         
         private lazy var childContainer = UIView().apply {
-            $0.backgroundColor = .white
             $0.clipsToBounds = true
             $0.layer.cornerRadius = 10
         }

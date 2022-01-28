@@ -18,10 +18,10 @@ class AppCoordinator {
         self.window = window
     }
     
-    private func makeHomeViewController() -> HomeViewController {
+    private func makeVehiclesViewController() -> VehiclesViewController {
         let vehicleService = VehicleService()
-        let viewModel = HomeViewModel(vehicleService: vehicleService)
-        return HomeViewController(viewModel: viewModel)
+        let viewModel = VehiclesViewModel(vehicleService: vehicleService)
+        return VehiclesViewController(viewModel: viewModel)
     }
     
     func start() {
@@ -29,11 +29,9 @@ class AppCoordinator {
     }
     
     func navigateToHome() {
-        let viewController = makeHomeViewController()
-        let navigation = UINavigationController(rootViewController: viewController)
-        navigation.navigationBar.prefersLargeTitles = true
-        
-        window.rootViewController = navigation
+        window.rootViewController = DefaultNavigationController(
+            rootViewController: makeVehiclesViewController()
+        )
         window.makeKeyAndVisible()
     }
 }
