@@ -20,6 +20,7 @@ class VehiclesViewController: BaseViewController {
         $0.refreshControl = refreshControl
         $0.delegate = self
         $0.dataSource = self
+        $0.tableFooterView = footerView
     }
     
     private let refreshControl = UIRefreshControl()
@@ -52,14 +53,7 @@ class VehiclesViewController: BaseViewController {
     }
     
     private func setupConstraints() {
-        view.addSubview(tableView) {
-            $0.leading.trailing.bottomMargin.equalToSuperview()
-            $0.topMargin.equalToSuperview()
-        }
-        view.addSubview(footerView) {
-            $0.leading.trailing.bottom.equalToSuperview().inset(16)
-            $0.height.equalTo(44)
-        }
+        view.addSubview(tableView) { $0.edges.equalToSuperview() }
     }
     
     private func setupBinds() {
