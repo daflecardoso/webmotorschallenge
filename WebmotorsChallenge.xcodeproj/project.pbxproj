@@ -42,6 +42,11 @@
 		D2427D1827A476D0001FD697 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D1627A476D0001FD697 /* VehicleService.swift */; };
 		D2427D1E27A4773E001FD697 /* vehicles_success_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2427D1D27A4773E001FD697 /* vehicles_success_response.json */; };
 		D2427D2127A477CB001FD697 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2027A477CB001FD697 /* Vehicle.swift */; };
+		D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2627A48252001FD697 /* BaseTableViewCell.swift */; };
+		D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */; };
+		D2427D2F27A48620001FD697 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2E27A48620001FD697 /* UITableView+Extension.swift */; };
+		D2427D3127A489FA001FD697 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3027A489FA001FD697 /* UIView+Extensions.swift */; };
+		D2427D3327A48D28001FD697 /* FormattableNumberic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3227A48D28001FD697 /* FormattableNumberic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +110,11 @@
 		D2427D1627A476D0001FD697 /* VehicleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
 		D2427D1D27A4773E001FD697 /* vehicles_success_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_success_response.json; sourceTree = "<group>"; };
 		D2427D2027A477CB001FD697 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		D2427D2627A48252001FD697 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D2427D2E27A48620001FD697 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		D2427D3027A489FA001FD697 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D2427D3227A48D28001FD697 /* FormattableNumberic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattableNumberic.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +232,7 @@
 			children = (
 				D2427CE327A46A9A001FD697 /* BaseViewController.swift */,
 				D2427CE527A46AA9001FD697 /* BaseViewModel.swift */,
+				D2427D2627A48252001FD697 /* BaseTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -255,6 +266,10 @@
 				D2427CF027A46C60001FD697 /* UITextFieldExtensions.swift */,
 				D2427CF727A46C61001FD697 /* UIViewControllerExtensions.swift */,
 				D2427CF627A46C61001FD697 /* UIViewExtensions.swift */,
+				D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */,
+				D2427D2E27A48620001FD697 /* UITableView+Extension.swift */,
+				D2427D3027A489FA001FD697 /* UIView+Extensions.swift */,
+				D2427D3227A48D28001FD697 /* FormattableNumberic.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -583,6 +598,7 @@
 				D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */,
 				D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */,
 				D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */,
+				D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */,
 				D2427CEE27A46BF9001FD697 /* CustomLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
 				D2427CFD27A46C61001FD697 /* UILabelExtensions.swift in Sources */,
@@ -590,6 +606,7 @@
 				D2427D1827A476D0001FD697 /* VehicleService.swift in Sources */,
 				D2427CFC27A46C61001FD697 /* SingleExtensions.swift in Sources */,
 				D2427CAC27A46729001FD697 /* AppDelegate.swift in Sources */,
+				D2427D3127A489FA001FD697 /* UIView+Extensions.swift in Sources */,
 				D2427D0927A46CC4001FD697 /* ServiceError.swift in Sources */,
 				D2427D0827A46CC4001FD697 /* Reachability.swift in Sources */,
 				D2427D0F27A46CF3001FD697 /* Enviroment.swift in Sources */,
@@ -597,12 +614,15 @@
 				D2427D0227A46CA9001FD697 /* Constants.swift in Sources */,
 				D2427D0A27A46CC4001FD697 /* HandleError.swift in Sources */,
 				D2427CFF27A46C61001FD697 /* UIViewControllerExtensions.swift in Sources */,
+				D2427D2F27A48620001FD697 /* UITableView+Extension.swift in Sources */,
 				D2427CE627A46AA9001FD697 /* BaseViewModel.swift in Sources */,
 				D2427CFE27A46C61001FD697 /* UIViewExtensions.swift in Sources */,
 				D2427CFB27A46C61001FD697 /* StringExtensions.swift in Sources */,
+				D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */,
 				D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */,
 				D2427CF827A46C61001FD697 /* UITextFieldExtensions.swift in Sources */,
 				D2427D1227A4769D001FD697 /* APIProvider.swift in Sources */,
+				D2427D3327A48D28001FD697 /* FormattableNumberic.swift in Sources */,
 				D2427CE127A46A5E001FD697 /* HomeViewController.swift in Sources */,
 				D2427CE427A46A9A001FD697 /* BaseViewController.swift in Sources */,
 			);

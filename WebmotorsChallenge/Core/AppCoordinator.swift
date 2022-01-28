@@ -19,7 +19,8 @@ class AppCoordinator {
     }
     
     private func makeHomeViewController() -> HomeViewController {
-        let viewModel = HomeViewModel()
+        let vehicleService = VehicleService()
+        let viewModel = HomeViewModel(vehicleService: vehicleService)
         return HomeViewController(viewModel: viewModel)
     }
     

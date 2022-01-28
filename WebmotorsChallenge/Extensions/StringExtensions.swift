@@ -23,4 +23,8 @@ extension String {
         }
         return data
     }
+    
+    var digits: String {
+        return components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+    }
 }
