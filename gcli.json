@@ -1,0 +1,10 @@
+{
+    "name": "webmotors",
+    "color": "#FF0000",
+    "showTutorial": false,
+    "scopes": [
+        "core",
+        "home",
+        "other"
+    ]
+}
