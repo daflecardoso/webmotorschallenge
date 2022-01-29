@@ -17,6 +17,7 @@ class DefaultNavigationController: UINavigationController {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = .backgroundContainerViews
+            appearance.shadowColor = .clear
             navigationBar.tintColor = .wb
             navigationBar.standardAppearance = appearance
             navigationBar.scrollEdgeAppearance = navigationBar.standardAppearance

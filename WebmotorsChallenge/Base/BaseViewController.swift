@@ -116,7 +116,7 @@ class BaseViewController: UIViewController {
     }
     
     deinit {
-        debugPrint("your screen \(self) has been removed from memory")
+        print("\(self) has been removed from memory")
     }
 }
 

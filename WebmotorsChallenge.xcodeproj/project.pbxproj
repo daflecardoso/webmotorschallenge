@@ -11,7 +11,6 @@
 		7321E275C8B157D0F2CBAC31 /* Pods_WebmotorsChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6430A753CA154270BEA83C7C /* Pods_WebmotorsChallengeTests.framework */; };
 		B8305A2D83185A2AC0D2A7A7 /* Pods_WebmotorsChallenge_WebmotorsChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EA42A6D0518CA26AC8ED75 /* Pods_WebmotorsChallenge_WebmotorsChallengeUITests.framework */; };
 		D2427CAC27A46729001FD697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CAB27A46729001FD697 /* AppDelegate.swift */; };
-		D2427CB527A4672B001FD697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2427CB427A4672B001FD697 /* Assets.xcassets */; };
 		D2427CB827A4672B001FD697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2427CB627A4672B001FD697 /* LaunchScreen.storyboard */; };
 		D2427CC327A4672B001FD697 /* WebmotorsChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CC227A4672B001FD697 /* WebmotorsChallengeTests.swift */; };
 		D2427CCD27A4672B001FD697 /* WebmotorsChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CCC27A4672B001FD697 /* WebmotorsChallengeUITests.swift */; };
@@ -48,6 +47,7 @@
 		D2427D3A27A49E91001FD697 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3927A49E91001FD697 /* DefaultNavigationController.swift */; };
 		D2427D3D27A49FA8001FD697 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3C27A49FA8001FD697 /* VehicleDetailViewController.swift */; };
 		D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */; };
+		D2808C3B27A585120042BAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2427CB427A4672B001FD697 /* Assets.xcassets */; };
 		D28B576527A4BD750031669F /* VehicleDetailCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576427A4BD750031669F /* VehicleDetailCellType.swift */; };
 		D28B576727A4C03E0031669F /* VehicleDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576627A4C03E0031669F /* VehicleDetailCells.swift */; };
 		D28B576A27A57E500031669F /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576927A57E500031669F /* VehicleTests.swift */; };
@@ -509,8 +509,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2427CB827A4672B001FD697 /* LaunchScreen.storyboard in Resources */,
+				D2808C3B27A585120042BAB5 /* Assets.xcassets in Resources */,
 				D2427D1E27A4773E001FD697 /* vehicles_success_response.json in Resources */,
-				D2427CB527A4672B001FD697 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,7 +771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -826,7 +826,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -842,6 +842,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				BASE_URL = "https://desafioonline.webmotors.com.br";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -872,6 +873,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				BASE_URL = "https://desafioonline.webmotors.com.br";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
