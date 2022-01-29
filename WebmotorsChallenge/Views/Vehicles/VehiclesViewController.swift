@@ -90,7 +90,8 @@ class VehiclesViewController: BaseViewController {
 extension VehiclesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        push(coordinator.makeVechicleDetailViewController())
+        let item = viewModel.items[indexPath.row]
+        push(coordinator.makeVechicleDetailViewController(vehicle: item))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
