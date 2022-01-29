@@ -12,9 +12,9 @@ struct Vehicle: Decodable {
     let make: String
     let model: String
     let version: String
-    private let image: String
+    let image: String
     let km: Int
-    private let price: String
+    let price: String
     let yearModel: Int
     let yearFab: Int
     let color: String

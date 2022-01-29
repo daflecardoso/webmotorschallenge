@@ -50,6 +50,7 @@
 		D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */; };
 		D28B576527A4BD750031669F /* VehicleDetailCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576427A4BD750031669F /* VehicleDetailCellType.swift */; };
 		D28B576727A4C03E0031669F /* VehicleDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576627A4C03E0031669F /* VehicleDetailCells.swift */; };
+		D28B576A27A57E500031669F /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576927A57E500031669F /* VehicleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		D2427D3E27A49FD0001FD697 /* VehicleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModel.swift; sourceTree = "<group>"; };
 		D28B576427A4BD750031669F /* VehicleDetailCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailCellType.swift; sourceTree = "<group>"; };
 		D28B576627A4C03E0031669F /* VehicleDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailCells.swift; sourceTree = "<group>"; };
+		D28B576927A57E500031669F /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 		D2427CC127A4672B001FD697 /* WebmotorsChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				D28B576827A57E3C0031669F /* Data */,
 				D2427CC227A4672B001FD697 /* WebmotorsChallengeTests.swift */,
 			);
 			path = WebmotorsChallengeTests;
@@ -368,6 +371,22 @@
 				D28B576627A4C03E0031669F /* VehicleDetailCells.swift */,
 			);
 			path = VehicleDetail;
+			sourceTree = "<group>";
+		};
+		D28B576827A57E3C0031669F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D28B576B27A57E570031669F /* Domain */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D28B576B27A57E570031669F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D28B576927A57E500031669F /* VehicleTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		FD380CCF8916C657224CCF75 /* Frameworks */ = {
@@ -660,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28B576A27A57E500031669F /* VehicleTests.swift in Sources */,
 				D2427CC327A4672B001FD697 /* WebmotorsChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
