@@ -53,10 +53,15 @@ class BaseViewController: UIViewController {
     }
     
     private func setup() {
+        setupNavigation()
         setupLoading()
         bindLoading()
         bindRefreshing()
         bindError()
+    }
+    
+    private func setupNavigation() {
+        navigationItem.backButtonTitle = ""
     }
     
     internal func setupLoading() {

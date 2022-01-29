@@ -16,7 +16,7 @@ class VehiclesViewController: BaseViewController {
     
     private lazy var tableView = UITableView().apply {
         $0.register(cellTypes: cells)
-        $0.separatorStyle = .none
+        $0.separatorInset = .zero
         $0.refreshControl = refreshControl
         $0.delegate = self
         $0.dataSource = self
@@ -49,7 +49,7 @@ class VehiclesViewController: BaseViewController {
     }
     
     private func setupView() {
-        self.title = "Veículos"
+        navigationItem.titleView = UIImageView.logo()
     }
     
     private func setupConstraints() {

@@ -15,12 +15,7 @@ extension VehiclesViewController {
         private lazy var containerView = UIView().apply {
             $0.backgroundColor = .cardColor
         }
-        
-        private lazy var childContainer = UIView().apply {
-            $0.clipsToBounds = true
-            $0.layer.cornerRadius = 10
-        }
-        
+    
         private lazy var vehicleImageView = UIImageView().apply {
             $0.contentMode = .scaleAspectFill
             $0.clipsToBounds = true
@@ -94,25 +89,21 @@ extension VehiclesViewController {
             super.setupConstraints()
             
             contentView.addSubview(containerView) {
-                $0.leading.trailing.top.equalToSuperview().inset(margin)
-                $0.bottom.equalToSuperview()
-            }
-            
-            containerView.addSubview(childContainer) {
                 $0.edges.equalToSuperview()
+
             }
             
-            childContainer.addSubview(vehicleImageView) {
+            containerView.addSubview(vehicleImageView) {
                 $0.leading.trailing.top.equalToSuperview()
                 $0.height.equalTo(200)
             }
             
-            childContainer.addSubview(stackView) {
+            containerView.addSubview(stackView) {
                 $0.leading.equalToSuperview().inset(margin)
                 $0.top.equalTo(vehicleImageView.snp.bottom).offset(margin)
             }
             
-            childContainer.addSubview(stackViewBottom) {
+            containerView.addSubview(stackViewBottom) {
                 $0.leading.trailing.equalToSuperview().inset(margin)
                 $0.top.equalTo(stackView.snp.bottom).offset(margin)
                 $0.bottom.equalToSuperview().inset(margin)
@@ -128,7 +119,6 @@ extension VehiclesViewController {
             yearLabel.text = vehicle.yearFormatted
             kmLabel.text = vehicle.kmFormatted
             colorLabel.text = vehicle.color
-            containerView.setupShadow()
         }
     }
 }

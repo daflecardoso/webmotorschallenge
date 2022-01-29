@@ -32,4 +32,13 @@ extension UIImageView {
             }
         }
     }
+    
+    class func logo() -> UIImageView {
+        return UIImageView(frame: .zero).apply {
+            $0.contentMode = .scaleAspectFit
+            $0.image = UIImage(named: "header-logo")
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        }
+    }
 }
