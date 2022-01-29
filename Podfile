@@ -8,10 +8,8 @@ def shared_pods
 
   pod 'RxSwift', '~> 6.0'
   pod 'RxCocoa', '~> 6.0'
-  pod 'RxKeyboard'
   pod 'Moya/RxSwift', '~> 15.0.0'
   pod 'Kingfisher', '~> 6.3.1'
-  pod 'SwiftKeychainWrapper'
   pod 'SnapKit', '~> 5.0.0'
   pod 'NotificationBannerSwift', '~> 3.0.0'
 

@@ -15,4 +15,14 @@ extension UIView {
         self.addSubview(view)
         view.snp.makeConstraints(closure)
     }
+    
+    func setupShadow(borderColor: UIColor = UIColor.white,
+                     shadowColor: UIColor = .gray,
+                     radius: CGFloat = 10) {
+        layer.cornerRadius = radius
+        layer.shadowColor = shadowColor.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowRadius = 6
+        layer.shadowOpacity = 0.6
+    }
 }

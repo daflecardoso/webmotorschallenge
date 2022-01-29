@@ -29,7 +29,6 @@ class ApiProvider<Target: TargetType>: MoyaProvider<Target> {
     static var headers: [String: String] {
         return [
             "Accept-Language": Locale.current.languageCode ?? "en",
-            "Authorization": "Bearer \(KeyChainCache.shared.token())",
             "Content-Type": "application/json"
         ]
     }

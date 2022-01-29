@@ -22,12 +22,10 @@
 		D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE827A46AF8001FD697 /* AppCoordinator.swift */; };
 		D2427CEB27A46B3A001FD697 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CEA27A46B3A001FD697 /* VehiclesViewModel.swift */; };
 		D2427CEE27A46BF9001FD697 /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CED27A46BF9001FD697 /* CustomLoadingView.swift */; };
-		D2427CF827A46C61001FD697 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF027A46C60001FD697 /* UITextFieldExtensions.swift */; };
 		D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF127A46C60001FD697 /* UIColorExtensions.swift */; };
 		D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF227A46C60001FD697 /* NSObjectExtensions.swift */; };
 		D2427CFB27A46C61001FD697 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF327A46C60001FD697 /* StringExtensions.swift */; };
 		D2427CFC27A46C61001FD697 /* SingleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF427A46C61001FD697 /* SingleExtensions.swift */; };
-		D2427CFD27A46C61001FD697 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF527A46C61001FD697 /* UILabelExtensions.swift */; };
 		D2427CFE27A46C61001FD697 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF627A46C61001FD697 /* UIViewExtensions.swift */; };
 		D2427CFF27A46C61001FD697 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF727A46C61001FD697 /* UIViewControllerExtensions.swift */; };
 		D2427D0227A46CA9001FD697 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0127A46CA9001FD697 /* Constants.swift */; };
@@ -35,7 +33,6 @@
 		D2427D0927A46CC4001FD697 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0527A46CC4001FD697 /* ServiceError.swift */; };
 		D2427D0A27A46CC4001FD697 /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0627A46CC4001FD697 /* HandleError.swift */; };
 		D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0727A46CC4001FD697 /* ResponseApiError.swift */; };
-		D2427D0E27A46CF3001FD697 /* KeyChainCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0C27A46CF3001FD697 /* KeyChainCache.swift */; };
 		D2427D0F27A46CF3001FD697 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D0D27A46CF3001FD697 /* Enviroment.swift */; };
 		D2427D1227A4769D001FD697 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D1127A4769D001FD697 /* APIProvider.swift */; };
 		D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D1527A476D0001FD697 /* VehicleAPI.swift */; };
@@ -45,7 +42,6 @@
 		D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2627A48252001FD697 /* BaseTableViewCell.swift */; };
 		D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */; };
 		D2427D2F27A48620001FD697 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D2E27A48620001FD697 /* UITableView+Extension.swift */; };
-		D2427D3127A489FA001FD697 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3027A489FA001FD697 /* UIView+Extensions.swift */; };
 		D2427D3327A48D28001FD697 /* FormattableNumberic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3227A48D28001FD697 /* FormattableNumberic.swift */; };
 		D2427D3627A49483001FD697 /* VehiclesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3527A49483001FD697 /* VehiclesCell.swift */; };
 		D2427D3827A49763001FD697 /* TableLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */; };
@@ -97,12 +93,10 @@
 		D2427CE827A46AF8001FD697 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D2427CEA27A46B3A001FD697 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
 		D2427CED27A46BF9001FD697 /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
-		D2427CF027A46C60001FD697 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		D2427CF127A46C60001FD697 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D2427CF227A46C60001FD697 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		D2427CF327A46C60001FD697 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		D2427CF427A46C61001FD697 /* SingleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleExtensions.swift; sourceTree = "<group>"; };
-		D2427CF527A46C61001FD697 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		D2427CF627A46C61001FD697 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D2427CF727A46C61001FD697 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D2427D0127A46CA9001FD697 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -110,7 +104,6 @@
 		D2427D0527A46CC4001FD697 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		D2427D0627A46CC4001FD697 /* HandleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
 		D2427D0727A46CC4001FD697 /* ResponseApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseApiError.swift; sourceTree = "<group>"; };
-		D2427D0C27A46CF3001FD697 /* KeyChainCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainCache.swift; sourceTree = "<group>"; };
 		D2427D0D27A46CF3001FD697 /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		D2427D1127A4769D001FD697 /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		D2427D1527A476D0001FD697 /* VehicleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
@@ -120,7 +113,6 @@
 		D2427D2627A48252001FD697 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		D2427D2E27A48620001FD697 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		D2427D3027A489FA001FD697 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D2427D3227A48D28001FD697 /* FormattableNumberic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattableNumberic.swift; sourceTree = "<group>"; };
 		D2427D3527A49483001FD697 /* VehiclesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesCell.swift; sourceTree = "<group>"; };
 		D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLoadingFooterView.swift; sourceTree = "<group>"; };
@@ -255,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				D2427D0D27A46CF3001FD697 /* Enviroment.swift */,
-				D2427D0C27A46CF3001FD697 /* KeyChainCache.swift */,
 				D2427CE827A46AF8001FD697 /* AppCoordinator.swift */,
 			);
 			path = Core;
@@ -278,13 +269,10 @@
 				D2427CF427A46C61001FD697 /* SingleExtensions.swift */,
 				D2427CF327A46C60001FD697 /* StringExtensions.swift */,
 				D2427CF127A46C60001FD697 /* UIColorExtensions.swift */,
-				D2427CF527A46C61001FD697 /* UILabelExtensions.swift */,
-				D2427CF027A46C60001FD697 /* UITextFieldExtensions.swift */,
 				D2427CF727A46C61001FD697 /* UIViewControllerExtensions.swift */,
 				D2427CF627A46C61001FD697 /* UIViewExtensions.swift */,
 				D2427D2C27A484D4001FD697 /* UIImageView+Extensions.swift */,
 				D2427D2E27A48620001FD697 /* UITableView+Extension.swift */,
-				D2427D3027A489FA001FD697 /* UIView+Extensions.swift */,
 				D2427D3227A48D28001FD697 /* FormattableNumberic.swift */,
 			);
 			path = Extensions;
@@ -641,12 +629,9 @@
 				D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */,
 				D2427CEE27A46BF9001FD697 /* CustomLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
-				D2427CFD27A46C61001FD697 /* UILabelExtensions.swift in Sources */,
-				D2427D0E27A46CF3001FD697 /* KeyChainCache.swift in Sources */,
 				D2427D1827A476D0001FD697 /* VehicleService.swift in Sources */,
 				D2427CFC27A46C61001FD697 /* SingleExtensions.swift in Sources */,
 				D2427CAC27A46729001FD697 /* AppDelegate.swift in Sources */,
-				D2427D3127A489FA001FD697 /* UIView+Extensions.swift in Sources */,
 				D2427D0927A46CC4001FD697 /* ServiceError.swift in Sources */,
 				D2427D3A27A49E91001FD697 /* DefaultNavigationController.swift in Sources */,
 				D2427D0827A46CC4001FD697 /* Reachability.swift in Sources */,
@@ -663,7 +648,6 @@
 				D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */,
 				D2427D3D27A49FA8001FD697 /* VehicleDetailViewController.swift in Sources */,
 				D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */,
-				D2427CF827A46C61001FD697 /* UITextFieldExtensions.swift in Sources */,
 				D2427D1227A4769D001FD697 /* APIProvider.swift in Sources */,
 				D2427D3327A48D28001FD697 /* FormattableNumberic.swift in Sources */,
 				D2427CE127A46A5E001FD697 /* VehiclesViewController.swift in Sources */,

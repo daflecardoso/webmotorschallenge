@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 import NotificationBannerSwift
-import RxKeyboard
 
 class BaseViewController: UIViewController {
     
@@ -58,14 +57,6 @@ class BaseViewController: UIViewController {
         bindLoading()
         bindRefreshing()
         bindError()
-        setupRxKeyboard()
-    }
-    
-    private func setupRxKeyboard() {
-        RxKeyboard.instance.visibleHeight
-          .drive(onNext: { [scrollContentInset] keyboardVisibleHeight in
-              scrollContentInset.contentInset.bottom = keyboardVisibleHeight
-          }).disposed(by: disposeBag)
     }
     
     internal func setupLoading() {
@@ -102,11 +93,6 @@ class BaseViewController: UIViewController {
         baseViewModel?
             .onError
             .drive(onNext: { [unowned self] error in
-                switch error {
-                case .shouldSignIn:
-                    KeyChainCache.shared.removeSignInData()
-                default: break
-                }
                 self.showBanner(message: error.errorMessage, style: .danger, duration: 5)
             }).disposed(by: disposeBag)
     }

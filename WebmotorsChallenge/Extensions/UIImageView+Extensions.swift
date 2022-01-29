@@ -11,7 +11,7 @@ import Kingfisher
 
 extension UIImageView {
     
-    func load(from url: String?, placeHolder: String = "noImageProduct", tintColor: UIColor? = nil) {
+    func load(from url: String?, placeHolder: String = "noImage", tintColor: UIColor? = nil) {
         let placeHolder = UIImage(named: placeHolder)
         guard let imageUrl = url else {
             self.image = placeHolder
