@@ -14,7 +14,7 @@ class VehiclesViewController: BaseViewController {
         VehicleCell.self
     ]
     
-    private lazy var tableView = UITableView().apply {
+    lazy var tableView = UITableView().apply {
         $0.register(cellTypes: cells)
         $0.separatorInset = .zero
         $0.refreshControl = refreshControl

@@ -19,7 +19,7 @@
 		D2427CE627A46AA9001FD697 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE527A46AA9001FD697 /* BaseViewModel.swift */; };
 		D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE827A46AF8001FD697 /* AppCoordinator.swift */; };
 		D2427CEB27A46B3A001FD697 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CEA27A46B3A001FD697 /* VehiclesViewModel.swift */; };
-		D2427CEE27A46BF9001FD697 /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CED27A46BF9001FD697 /* CustomLoadingView.swift */; };
+		D2427CEE27A46BF9001FD697 /* CenterLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CED27A46BF9001FD697 /* CenterLoadingView.swift */; };
 		D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF127A46C60001FD697 /* UIColorExtensions.swift */; };
 		D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF227A46C60001FD697 /* NSObjectExtensions.swift */; };
 		D2427CFB27A46C61001FD697 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CF327A46C60001FD697 /* StringExtensions.swift */; };
@@ -61,6 +61,11 @@
 		D2C6221127A70320002C66DC /* NSObjectExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */; };
 		D2C6221527A7067B002C66DC /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */; };
 		D2C6221727A7079D002C66DC /* FormattableNumericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221627A7079D002C66DC /* FormattableNumericTests.swift */; };
+		D2C6221E27A70E54002C66DC /* VehiclesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221D27A70E54002C66DC /* VehiclesViewModelTests.swift */; };
+		D2C6222027A71101002C66DC /* VehiclesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221F27A71101002C66DC /* VehiclesViewControllerTests.swift */; };
+		D2C6222227A71179002C66DC /* FakeVehiclesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222127A71179002C66DC /* FakeVehiclesService.swift */; };
+		D2C6222427A71281002C66DC /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222327A71281002C66DC /* UIApplicationExtensions.swift */; };
+		D2C6222627A71447002C66DC /* TestsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222527A71447002C66DC /* TestsExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +107,7 @@
 		D2427CE527A46AA9001FD697 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		D2427CE827A46AF8001FD697 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D2427CEA27A46B3A001FD697 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
-		D2427CED27A46BF9001FD697 /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		D2427CED27A46BF9001FD697 /* CenterLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLoadingView.swift; sourceTree = "<group>"; };
 		D2427CF127A46C60001FD697 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D2427CF227A46C60001FD697 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		D2427CF327A46C60001FD697 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -143,6 +148,11 @@
 		D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionsTests.swift; sourceTree = "<group>"; };
 		D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		D2C6221627A7079D002C66DC /* FormattableNumericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattableNumericTests.swift; sourceTree = "<group>"; };
+		D2C6221D27A70E54002C66DC /* VehiclesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModelTests.swift; sourceTree = "<group>"; };
+		D2C6221F27A71101002C66DC /* VehiclesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewControllerTests.swift; sourceTree = "<group>"; };
+		D2C6222127A71179002C66DC /* FakeVehiclesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeVehiclesService.swift; sourceTree = "<group>"; };
+		D2C6222327A71281002C66DC /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		D2C6222527A71447002C66DC /* TestsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsExtensions.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +246,7 @@
 				D28B576827A57E3C0031669F /* Data */,
 				D2C6220C27A70222002C66DC /* Helpers */,
 				D2C6220F27A702E6002C66DC /* Extensions */,
+				D2C6221B27A70E2D002C66DC /* Views */,
 			);
 			path = WebmotorsChallengeTests;
 			sourceTree = "<group>";
@@ -280,7 +291,7 @@
 		D2427CEC27A46BEE001FD697 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D2427CED27A46BF9001FD697 /* CustomLoadingView.swift */,
+				D2427CED27A46BF9001FD697 /* CenterLoadingView.swift */,
 				D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */,
 				D2427D3927A49E91001FD697 /* DefaultNavigationController.swift */,
 			);
@@ -301,6 +312,7 @@
 				D2427D3227A48D28001FD697 /* FormattableNumberic.swift */,
 				D2808C4627A590740042BAB5 /* UIFont+Extensions.swift */,
 				D2808C5C27A594420042BAB5 /* UILabel+Extensions.swift */,
+				D2C6222327A71281002C66DC /* UIApplicationExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -439,8 +451,27 @@
 				D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */,
 				D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */,
 				D2C6221627A7079D002C66DC /* FormattableNumericTests.swift */,
+				D2C6222527A71447002C66DC /* TestsExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2C6221B27A70E2D002C66DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6221C27A70E34002C66DC /* Vehicles */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2C6221C27A70E34002C66DC /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6222127A71179002C66DC /* FakeVehiclesService.swift */,
+				D2C6221F27A71101002C66DC /* VehiclesViewControllerTests.swift */,
+				D2C6221D27A70E54002C66DC /* VehiclesViewModelTests.swift */,
+			);
+			path = Vehicles;
 			sourceTree = "<group>";
 		};
 		FD380CCF8916C657224CCF75 /* Frameworks */ = {
@@ -699,13 +730,14 @@
 			files = (
 				D2427D3627A49483001FD697 /* VehiclesCell.swift in Sources */,
 				D28B576727A4C03E0031669F /* VehicleDetailCells.swift in Sources */,
+				D2C6222427A71281002C66DC /* UIApplicationExtensions.swift in Sources */,
 				D2427D2127A477CB001FD697 /* Vehicle.swift in Sources */,
 				D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */,
 				D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */,
 				D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */,
 				D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */,
 				D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */,
-				D2427CEE27A46BF9001FD697 /* CustomLoadingView.swift in Sources */,
+				D2427CEE27A46BF9001FD697 /* CenterLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
 				D2427D1827A476D0001FD697 /* VehicleService.swift in Sources */,
 				D2427CFC27A46C61001FD697 /* SingleExtensions.swift in Sources */,
@@ -743,8 +775,12 @@
 				D28B576A27A57E500031669F /* VehicleTests.swift in Sources */,
 				D2C6220E27A70240002C66DC /* ConstantsTests.swift in Sources */,
 				D2C6221727A7079D002C66DC /* FormattableNumericTests.swift in Sources */,
+				D2C6221E27A70E54002C66DC /* VehiclesViewModelTests.swift in Sources */,
+				D2C6222027A71101002C66DC /* VehiclesViewControllerTests.swift in Sources */,
 				D2C6221527A7067B002C66DC /* StringExtensionsTests.swift in Sources */,
 				D2C6221127A70320002C66DC /* NSObjectExtensionsTests.swift in Sources */,
+				D2C6222627A71447002C66DC /* TestsExtensions.swift in Sources */,
+				D2C6222227A71179002C66DC /* FakeVehiclesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

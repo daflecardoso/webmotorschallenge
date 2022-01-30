@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CustomLoadingView: UIView {
+class CenterLoadingView: UIView {
     
     private let indicator = UIActivityIndicatorView().apply {
         $0.translatesAutoresizingMaskIntoConstraints = false

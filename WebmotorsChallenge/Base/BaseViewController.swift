@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         return nil
     }
     internal let disposeBag = DisposeBag()
-    internal let hud = CustomLoadingView()
+    internal let hud = CenterLoadingView()
     private var banner: GrowingNotificationBanner?
     
     internal var requestingViews: [UIButton] {
