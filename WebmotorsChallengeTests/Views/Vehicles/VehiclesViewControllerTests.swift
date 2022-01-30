@@ -15,7 +15,7 @@ private extension VehiclesViewController {
         return tableView.numberOfRows(inSection: 0)
     }
     
-    func goTo(row: Int) {
+    func scrollTo(row: Int) {
         tableView.toRow(row: row)
     }
     
@@ -44,11 +44,11 @@ class VehiclesViewControllerTests: XCTestCase {
         let viewController = makeViewInstance(type: .success)
         window?.rootViewController = viewController
         XCTAssertEqual(viewController.tableRows, 10)
-        viewController.goTo(row: 9)
+        viewController.scrollTo(row: 9)
         XCTAssertEqual(viewController.tableRows, 20)
-        viewController.goTo(row: 19)
+        viewController.scrollTo(row: 19)
         XCTAssertEqual(viewController.tableRows, 30)
-        viewController.goTo(row: 20)
+        viewController.scrollTo(row: 20)
         XCTAssertEqual(viewController.tableRows, 30)
     }
     
@@ -56,11 +56,11 @@ class VehiclesViewControllerTests: XCTestCase {
         let viewController = makeViewInstance(type: .success)
         window?.rootViewController = viewController
         XCTAssertEqual(viewController.tableRows, 10)
-        viewController.goTo(row: 9)
+        viewController.scrollTo(row: 9)
         XCTAssertEqual(viewController.tableRows, 20)
-        viewController.goTo(row: 19)
+        viewController.scrollTo(row: 19)
         XCTAssertEqual(viewController.tableRows, 30)
-        viewController.goTo(row: 20)
+        viewController.scrollTo(row: 20)
         XCTAssertEqual(viewController.tableRows, 30)
         viewController.swipe()
         XCTAssertEqual(viewController.tableRows, 10)
