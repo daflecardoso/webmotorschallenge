@@ -12,7 +12,7 @@ import RxSwift
 
 class BaseTableViewCell: UITableViewCell {
     
-    internal let margin: CGFloat = 16
+    internal let margin: CGFloat = Constants.margin
     internal let disposeBag = DisposeBag()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

@@ -46,7 +46,7 @@ class VechicleDetailViewController: BaseViewController {
     }
     
     private func setupView() {
-        title = viewModel.vehicle.model
+        navigationItem.titleView = UILabel.title(viewModel.vehicle.make, viewModel.vehicle.model)
     }
     
     private func setupConstraints() {

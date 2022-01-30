@@ -99,18 +99,15 @@ extension VehiclesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: VehicleCell.self, for: indexPath)
-        let item = viewModel.items[indexPath.row]
-        cell.set(with: item)
-        return cell
+        return tableView.dequeueReusableCell(with: VehicleCell.self, for: indexPath).apply {
+            $0.set(with: viewModel.items[indexPath.row])
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY: CGFloat = scrollView.contentOffset.y + scrollView.frame.size.height
-        let contentSizeHeight: CGFloat = scrollView.contentSize.height - 200
-        
-        if (offsetY > contentSizeHeight) && !viewModel.isDataLoading && !viewModel.paginationFinished {
-            viewModel.fetch()
-        }
+        viewModel.paginate(
+            offsetY: scrollView.contentOffset.y + scrollView.frame.size.height,
+            contentSizeHeight: scrollView.contentSize.height - 200
+        )
     }
 }

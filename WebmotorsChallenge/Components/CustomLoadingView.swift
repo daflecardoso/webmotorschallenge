@@ -17,7 +17,7 @@ class CustomLoadingView: UIView {
         $0.color = .wb
     }
     
-    private let margin: CGFloat = 16
+    private let margin: CGFloat = Constants.margin
     override var isHidden: Bool {
         didSet {
             if isHidden {
@@ -35,7 +35,7 @@ class CustomLoadingView: UIView {
     
     private func setup() {
         backgroundColor = .headerNavigationTint
-        layer.cornerRadius = 16
+        layer.cornerRadius = margin
     
         addSubview(indicator)
         addConstraints([

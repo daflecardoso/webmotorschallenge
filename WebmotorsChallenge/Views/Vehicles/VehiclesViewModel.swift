@@ -23,13 +23,19 @@ class VehiclesViewModel: BaseViewModel {
     var reload: Driver<()> { _reload.asDriver(onErrorJustReturn: ()) }
     
     var shouldRemoveAll = false
-    var isDataLoading: Bool = false
-    var pageNo: Int = 0
-    var paginationFinished: Bool = false
+    private var isDataLoading: Bool = false
+    private var pageNumber: Int = 0
+    private var paginationFinished: Bool = false
+    
+    func paginate(offsetY: CGFloat, contentSizeHeight: CGFloat) {
+        if (offsetY > contentSizeHeight) && !isDataLoading && !paginationFinished {
+            fetch()
+        }
+    }
     
     func refresh() {
         guard !isDataLoading else { return }
-        pageNo = 0
+        pageNumber = 0
         paginationFinished = false
         shouldRemoveAll = true
         fetch()
@@ -37,10 +43,10 @@ class VehiclesViewModel: BaseViewModel {
     
     func fetch() {
         self.isDataLoading = true
-        self.pageNo = (self.pageNo + 1)
+        self.pageNumber = (self.pageNumber + 1)
         
         vehicleService
-            .vehicles(page: pageNo)
+            .vehicles(page: pageNumber)
             .paginating(isPaginating)
             .subscribe(onSuccess: { [unowned self] vehicles in
                 if shouldRemoveAll { items.removeAll(); shouldRemoveAll = false }

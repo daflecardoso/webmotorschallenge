@@ -36,48 +36,20 @@ extension VechicleDetailViewController {
     // MARK: VehicleInfoCell
     class VehicleInfoCell: BaseTableViewCell {
         
-        private let makeLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 16)
-        }
-        
-        private let modelLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 16)
-            $0.textColor = .red
-        }
-        
-        private lazy var nameStackView = UIStackView(arrangedSubviews: [
-            makeLabel,
-            modelLabel,
-            UIView()
-        ]).apply {
-            $0.axis = .horizontal
-            $0.spacing = 2
-        }
-        
         private let versionLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 14)
+            $0.font = .bold(20)
             $0.textColor = .lightGray
-        }
-        
-        private lazy var stackView = UIStackView(arrangedSubviews: [
-            nameStackView,
-            versionLabel
-        ]).apply {
-            $0.axis = .vertical
-            $0.spacing = 2
         }
         
         override func setupConstraints() {
             super.setupConstraints()
             
-            contentView.addSubview(stackView) {
+            contentView.addSubview(versionLabel) {
                 $0.edges.equalToSuperview().inset(margin)
             }
         }
         
         func set(with vehicle: Vehicle) {
-            makeLabel.text = vehicle.make
-            modelLabel.text = vehicle.model
             versionLabel.text = vehicle.version
         }
     }
@@ -86,7 +58,7 @@ extension VechicleDetailViewController {
     class VehiclePriceCell: BaseTableViewCell {
         
         private let priceLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 22)
+            $0.font = .bold(30)
         }
         
         override func setupConstraints() {
@@ -105,14 +77,15 @@ extension VechicleDetailViewController {
     // MARK: VehicleDetailCell
     class VehicleDetailCell: BaseTableViewCell {
         
-        private lazy var yearLabel = makeValueLabel()
-        private lazy var kmLabel = makeValueLabel()
-        private lazy var colorLabel = makeValueLabel()
+        private lazy var yearLabel = makeValueLabel(.left)
+        private lazy var kmLabel = makeValueLabel(.center)
+        private lazy var colorLabel = makeValueLabel(.right)
         
-        private func makeValueLabel() -> UILabel {
+        private func makeValueLabel(_ textAlignment: NSTextAlignment) -> UILabel {
             return UILabel().apply {
-                $0.font = .systemFont(ofSize: 16)
+                $0.font = .semiBold(18)
                 $0.textColor = .lightGray
+                $0.textAlignment = textAlignment
             }
         }
         
@@ -121,7 +94,8 @@ extension VechicleDetailViewController {
             kmLabel,
             colorLabel
         ]).apply {
-            $0.axis = .vertical
+            $0.distribution = .fillEqually
+            $0.axis = .horizontal
             $0.spacing = 4
         }
         

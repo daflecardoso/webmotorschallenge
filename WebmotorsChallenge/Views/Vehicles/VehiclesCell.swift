@@ -22,11 +22,11 @@ extension VehiclesViewController {
         }
         
         private let makeLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 16)
+            $0.font = .bold(16)
         }
         
         private let modelLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 16)
+            $0.font = .bold(16)
             $0.textColor = .red
         }
         
@@ -40,12 +40,12 @@ extension VehiclesViewController {
         }
         
         private let versionLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 14)
+            $0.font = .bold(14)
             $0.textColor = .lightGray
         }
         
         private let priceLabel = UILabel().apply {
-            $0.font = .boldSystemFont(ofSize: 22)
+            $0.font = .bold(30)
         }
         
         private lazy var stackView = UIStackView(arrangedSubviews: [
@@ -58,19 +58,19 @@ extension VehiclesViewController {
         }
         
         private let yearLabel = UILabel().apply {
-            $0.font = .systemFont(ofSize: 12)
+            $0.font = .medium(12)
             $0.textColor = .lightGray
             $0.textAlignment = .left
         }
         
         private let kmLabel = UILabel().apply {
-            $0.font = .systemFont(ofSize: 12)
+            $0.font = .medium(12)
             $0.textColor = .lightGray
             $0.textAlignment = .center
         }
         
         private let colorLabel = UILabel().apply {
-            $0.font = .systemFont(ofSize: 12)
+            $0.font = .medium(12)
             $0.textColor = .lightGray
             $0.textAlignment = .right
         }

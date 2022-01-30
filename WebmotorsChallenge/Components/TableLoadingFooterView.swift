@@ -10,7 +10,11 @@ import UIKit
 
 class TableLoadingFooterView: UIView {
     
-    let indicator = UIActivityIndicatorView(style: .white)
+    private let indicator = UIActivityIndicatorView(style: .white).apply {
+        $0.startAnimating()
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.color = .wb
+    }
     
     init() {
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
@@ -22,13 +26,6 @@ class TableLoadingFooterView: UIView {
     }
     
     private func setup() {
-        indicator.startAnimating()
-        indicator.translatesAutoresizingMaskIntoConstraints = false
-        indicator.color = .wb
-        addSubview(indicator)
-        NSLayoutConstraint.activate([
-            indicator.centerYAnchor.constraint(equalTo: centerYAnchor),
-            indicator.centerXAnchor.constraint(equalTo: centerXAnchor)
-        ])
+        addSubview(indicator) { $0.centerX.centerY.equalToSuperview() }
     }
 }

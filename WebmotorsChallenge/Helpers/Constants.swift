@@ -11,4 +11,5 @@ import UIKit
 struct Constants {
     
     static let cardRadius: CGFloat = 16
+    static let margin: CGFloat = 16
 }
