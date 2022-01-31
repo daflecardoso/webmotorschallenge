@@ -35,8 +35,8 @@ class AppCoordinator {
         return VehiclesViewController(viewModel: viewModel)
     }
     
-    func makeVechicleDetailViewController(vehicle: Vehicle) -> VechicleDetailViewController {
+    func makeVechicleDetailViewController(vehicle: Vehicle) -> VehicleDetailViewController {
         let viewModel = VehicleDetailViewModel(vehicle: vehicle)
-        return VechicleDetailViewController(viewModel: viewModel)
+        return VehicleDetailViewController(viewModel: viewModel)
     }
 }

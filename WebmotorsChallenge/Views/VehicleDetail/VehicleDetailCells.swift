@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension VechicleDetailViewController {
+extension VehicleDetailViewController {
     
     // MARK: PhotosCell
     class PhotosCell: BaseTableViewCell {

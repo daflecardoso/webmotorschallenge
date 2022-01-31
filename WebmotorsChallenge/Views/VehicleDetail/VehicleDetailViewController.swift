@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class VechicleDetailViewController: BaseViewController {
+class VehicleDetailViewController: BaseViewController {
     
     private let cells = [
         PhotosCell.self,
@@ -17,7 +17,7 @@ class VechicleDetailViewController: BaseViewController {
         VehicleDetailCell.self
     ]
     
-    private lazy var tableView = UITableView().apply {
+    lazy var tableView = UITableView().apply {
         $0.register(cellTypes: cells)
         $0.separatorInset = .zero
         $0.delegate = self
@@ -54,7 +54,7 @@ class VechicleDetailViewController: BaseViewController {
     }
 }
 
-extension VechicleDetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension VehicleDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.items.count
