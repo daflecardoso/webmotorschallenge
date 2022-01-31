@@ -23,18 +23,7 @@ class FakeVehiclesService: VehicleServiceContract {
     }
     
     func vehicles(page: Int) -> Single<[Vehicle]> {
-        let vehicle = Vehicle(
-            id: 1,
-            make: "honda",
-            model: "city",
-            version: "2.0",
-            image: "https://some.com",
-            km: 0,
-            price: "10000,00",
-            yearModel: 2020,
-            yearFab: 2019,
-            color: "Branca"
-        )
+        let vehicle = Vehicle.fakeInstance
         switch type {
         case .success:
             return Single.just([Vehicle](repeating: vehicle, count: 10))

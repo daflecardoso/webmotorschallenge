@@ -13,7 +13,6 @@
 		D2427CAC27A46729001FD697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CAB27A46729001FD697 /* AppDelegate.swift */; };
 		D2427CB827A4672B001FD697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2427CB627A4672B001FD697 /* LaunchScreen.storyboard */; };
 		D2427CCD27A4672B001FD697 /* WebmotorsChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CCC27A4672B001FD697 /* WebmotorsChallengeUITests.swift */; };
-		D2427CCF27A4672B001FD697 /* WebmotorsChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CCE27A4672B001FD697 /* WebmotorsChallengeUITestsLaunchTests.swift */; };
 		D2427CE127A46A5E001FD697 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE027A46A5E001FD697 /* VehiclesViewController.swift */; };
 		D2427CE427A46A9A001FD697 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE327A46A9A001FD697 /* BaseViewController.swift */; };
 		D2427CE627A46AA9001FD697 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2427CE527A46AA9001FD697 /* BaseViewModel.swift */; };
@@ -68,6 +67,8 @@
 		D2C6222627A71447002C66DC /* TestsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222527A71447002C66DC /* TestsExtensions.swift */; };
 		D2C6222927A80241002C66DC /* VehicleDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222827A80241002C66DC /* VehicleDetailViewModelTests.swift */; };
 		D2C6222B27A807E4002C66DC /* VehicleDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222A27A807E4002C66DC /* VehicleDetailViewControllerTests.swift */; };
+		D2C6222D27A819E5002C66DC /* vehicles_error_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222C27A819E5002C66DC /* vehicles_error_response.json */; };
+		D2C6222F27A81A0C002C66DC /* vehicles_empty_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +104,6 @@
 		D2427CBE27A4672B001FD697 /* WebmotorsChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebmotorsChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2427CC827A4672B001FD697 /* WebmotorsChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebmotorsChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2427CCC27A4672B001FD697 /* WebmotorsChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebmotorsChallengeUITests.swift; sourceTree = "<group>"; };
-		D2427CCE27A4672B001FD697 /* WebmotorsChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebmotorsChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2427CE027A46A5E001FD697 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
 		D2427CE327A46A9A001FD697 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D2427CE527A46AA9001FD697 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -157,6 +157,8 @@
 		D2C6222527A71447002C66DC /* TestsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsExtensions.swift; sourceTree = "<group>"; };
 		D2C6222827A80241002C66DC /* VehicleDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModelTests.swift; sourceTree = "<group>"; };
 		D2C6222A27A807E4002C66DC /* VehicleDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		D2C6222C27A819E5002C66DC /* vehicles_error_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_error_response.json; sourceTree = "<group>"; };
+		D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_empty_response.json; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,7 +261,6 @@
 			isa = PBXGroup;
 			children = (
 				D2427CCC27A4672B001FD697 /* WebmotorsChallengeUITests.swift */,
-				D2427CCE27A4672B001FD697 /* WebmotorsChallengeUITestsLaunchTests.swift */,
 			);
 			path = WebmotorsChallengeUITests;
 			sourceTree = "<group>";
@@ -380,6 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				D2427D1D27A4773E001FD697 /* vehicles_success_response.json */,
+				D2C6222C27A819E5002C66DC /* vehicles_error_response.json */,
+				D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */,
 			);
 			path = Vehicles;
 			sourceTree = "<group>";
@@ -608,6 +611,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2808C5927A593AE0042BAB5 /* Rajdhani-SemiBold.ttf in Resources */,
+				D2C6222F27A81A0C002C66DC /* vehicles_empty_response.json in Resources */,
+				D2C6222D27A819E5002C66DC /* vehicles_error_response.json in Resources */,
 				D2808C5727A593AE0042BAB5 /* Rajdhani-Light.ttf in Resources */,
 				D2427CB827A4672B001FD697 /* LaunchScreen.storyboard in Resources */,
 				D2808C3B27A585120042BAB5 /* Assets.xcassets in Resources */,
@@ -805,7 +810,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2427CCD27A4672B001FD697 /* WebmotorsChallengeUITests.swift in Sources */,
-				D2427CCF27A4672B001FD697 /* WebmotorsChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,18 +29,7 @@ class VehicleDetailViewControllerTests: XCTestCase {
     private var window: UIWindow? = UIApplication.keyWindow
     
     private func makeViewInstance() -> VehicleDetailViewController {
-        let vehicle = Vehicle(
-            id: 1,
-            make: "honda",
-            model: "city",
-            version: "2.0",
-            image: "https://some.com",
-            km: 0,
-            price: "10000,00",
-            yearModel: 2020,
-            yearFab: 2019,
-            color: "Branca"
-        )
+        let vehicle = Vehicle.fakeInstance
         let viewModel = VehicleDetailViewModel(vehicle: vehicle)
         return VehicleDetailViewController(viewModel: viewModel)
     }

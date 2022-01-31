@@ -1,1 +1,38 @@
-[]
+[
+   {
+      "ID":1,
+      "Make":"FAKE",
+      "Model":"CAR UITest",
+      "Version":"2.0 EXL 4X4 16V GASOLINA 4P AUTOMÁTICO",
+      "Image":"http://desafioonline.webmotors.com.br/content/img/01.jpg",
+      "KM":10,
+      "Price":"59000,00",
+      "YearModel":2018,
+      "YearFab":2017,
+      "Color":"Azul"
+   },
+   {
+      "ID":2,
+      "Make":"FAKE",
+      "Model":"CAR UITest",
+      "Version":"2.0 EVO 4P AUTOMÁTICO",
+      "Image":"http://desafioonline.webmotors.com.br/content/img/02.jpg",
+      "KM":47500,
+      "Price":"49000,00",
+      "YearModel":2012,
+      "YearFab":2012,
+      "Color":"Branco"
+   },
+   {
+      "ID":3,
+      "Make":"FAKE",
+      "Model":"CAR UITest",
+      "Version":"1.4 LXL 16V FLEX 4P AUTOMÁTICO",
+      "Image":"http://desafioonline.webmotors.com.br/content/img/03.jpg",
+      "KM":0,
+      "Price":"78000,00",
+      "YearModel":2018,
+      "YearFab":2018,
+      "Color":"Preto"
+   }
+]

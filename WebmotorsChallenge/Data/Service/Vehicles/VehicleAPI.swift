@@ -42,7 +42,8 @@ extension VehiclesAPI: TargetType {
     var sampleData: Data {
         switch self {
         case .vehicles:
-            return "vehicles_success_response".jsonData
+            let process = ProcessInfo.processInfo.environment["current_mock"] ?? ""
+            return process.jsonData
         }
     }
     
