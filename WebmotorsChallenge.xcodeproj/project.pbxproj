@@ -71,6 +71,8 @@
 		D2C6222F27A81A0C002C66DC /* vehicles_empty_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */; };
 		D2C6223227A8285A002C66DC /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223127A8285A002C66DC /* VehicleRepository.swift */; };
 		D2C6223427A82958002C66DC /* FakeVehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */; };
+		D2C6223B27A82CDE002C66DC /* webmotors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223927A82CDE002C66DC /* webmotors.xcdatamodeld */; };
+		D2C6223D27A83DCD002C66DC /* TotalVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223C27A83DCD002C66DC /* TotalVehiclesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_empty_response.json; sourceTree = "<group>"; };
 		D2C6223127A8285A002C66DC /* VehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRepository.swift; sourceTree = "<group>"; };
 		D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeVehicleRepository.swift; sourceTree = "<group>"; };
+		D2C6223A27A82CDE002C66DC /* webmotors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = webmotors.xcdatamodel; sourceTree = "<group>"; };
+		D2C6223C27A83DCD002C66DC /* TotalVehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalVehiclesView.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,6 +250,7 @@
 				D2427CB427A4672B001FD697 /* Assets.xcassets */,
 				D2427CB627A4672B001FD697 /* LaunchScreen.storyboard */,
 				D2427CB927A4672B001FD697 /* Info.plist */,
+				D2C6223927A82CDE002C66DC /* webmotors.xcdatamodeld */,
 			);
 			path = WebmotorsChallenge;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				D2427CED27A46BF9001FD697 /* CenterLoadingView.swift */,
 				D2427D3727A49763001FD697 /* TableLoadingFooterView.swift */,
 				D2427D3927A49E91001FD697 /* DefaultNavigationController.swift */,
+				D2C6223C27A83DCD002C66DC /* TotalVehiclesView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -774,12 +780,14 @@
 				D2427CEE27A46BF9001FD697 /* CenterLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
 				D2427D1827A476D0001FD697 /* VehicleService.swift in Sources */,
+				D2C6223B27A82CDE002C66DC /* webmotors.xcdatamodeld in Sources */,
 				D2427CFC27A46C61001FD697 /* SingleExtensions.swift in Sources */,
 				D2808C5D27A594430042BAB5 /* UILabel+Extensions.swift in Sources */,
 				D2427CAC27A46729001FD697 /* AppDelegate.swift in Sources */,
 				D2808C4727A590740042BAB5 /* UIFont+Extensions.swift in Sources */,
 				D2427D0927A46CC4001FD697 /* ServiceError.swift in Sources */,
 				D2427D3A27A49E91001FD697 /* DefaultNavigationController.swift in Sources */,
+				D2C6223D27A83DCD002C66DC /* TotalVehiclesView.swift in Sources */,
 				D2427D0827A46CC4001FD697 /* Reachability.swift in Sources */,
 				D2427D0F27A46CF3001FD697 /* Enviroment.swift in Sources */,
 				D2427CEB27A46B3A001FD697 /* VehiclesViewModel.swift in Sources */,
@@ -1154,6 +1162,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2C6223927A82CDE002C66DC /* webmotors.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2C6223A27A82CDE002C66DC /* webmotors.xcdatamodel */,
+			);
+			currentVersion = D2C6223A27A82CDE002C66DC /* webmotors.xcdatamodel */;
+			path = webmotors.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D2427CA027A46729001FD697 /* Project object */;
 }

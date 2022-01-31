@@ -8,7 +8,7 @@
 import Foundation
 
 enum VehicleDetailCellType {
-    case photos(String)
+    case photos(String?)
     case vehicle(Vehicle)
     case price(String)
     case detail(Vehicle)

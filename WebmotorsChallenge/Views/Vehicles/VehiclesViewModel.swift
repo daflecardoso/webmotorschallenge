@@ -22,6 +22,11 @@ class VehiclesViewModel: BaseViewModel {
     private let _reload = PublishSubject<()>()
     var reload: Driver<()> { _reload.asDriver(onErrorJustReturn: ()) }
     
+    private let _totalVehicles = PublishSubject<String?>()
+    var totalVehicles: Driver<String?> {
+        return _totalVehicles.asDriver(onErrorJustReturn: nil)
+    }
+    
     var shouldRemoveAll = false
     private var isDataLoading: Bool = false
     private var pageNumber: Int = 0
@@ -52,6 +57,7 @@ class VehiclesViewModel: BaseViewModel {
                 if shouldRemoveAll { items.removeAll(); shouldRemoveAll = false }
                 self.isDataLoading = false
                 self.items.append(contentsOf: vehicles)
+                self._totalVehicles.onNext("Total: \(self.items.count)")
                 self.paginationFinished = vehicles.isEmpty
                 self._reload.onNext(())
             }, onFailure: handleError(error:))

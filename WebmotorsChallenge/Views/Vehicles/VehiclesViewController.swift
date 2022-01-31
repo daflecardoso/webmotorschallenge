@@ -23,6 +23,10 @@ class VehiclesViewController: BaseViewController {
         $0.tableFooterView = footerView
     }
     
+    private lazy var totalVehiclesView = TotalVehiclesView().apply {
+        $0.isHidden = true
+    }
+    
     private let refreshControl = UIRefreshControl()
     
     private let footerView = TableLoadingFooterView()
@@ -54,6 +58,10 @@ class VehiclesViewController: BaseViewController {
     
     private func setupConstraints() {
         view.addSubview(tableView) { $0.edges.equalToSuperview() }
+        view.addSubview(totalVehiclesView) {
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview()
+        }
     }
     
     private func setupBinds() {
@@ -84,6 +92,23 @@ class VehiclesViewController: BaseViewController {
             .map {!$0 }
             .drive(footerView.rx.isHidden)
             .disposed(by: disposeBag)
+        
+        viewModel
+            .totalVehicles
+            .do(onNext: { [unowned self] _ in self.animateCounterView() })
+                .drive(totalVehiclesView.totalLabel.rx.text)
+                .disposed(by: disposeBag)
+                }
+    
+    private func animateCounterView() {
+        totalVehiclesView.isHidden = false
+        totalVehiclesView.snp.remakeConstraints {
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(80)
+        }
+        UIView.animate(withDuration: 1) { [unowned self] in
+            view.layoutIfNeeded()
+        }
     }
 }
 

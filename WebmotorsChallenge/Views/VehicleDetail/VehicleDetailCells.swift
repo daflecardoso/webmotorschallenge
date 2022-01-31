@@ -28,7 +28,7 @@ extension VehicleDetailViewController {
             }
         }
         
-        func set(with photo: String) {
+        func set(with photo: String?) {
             vehicleImageView.load(from: photo)
         }
     }

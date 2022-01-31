@@ -17,7 +17,7 @@ extension UILabel {
         }
     }
     
-    class func title(_ make: String, _ model: String) -> UIStackView {
+    class func title(_ make: String?, _ model: String?) -> UIStackView {
         return UIStackView(arrangedSubviews: [
             UILabel().apply {
                 $0.font = .bold(20)

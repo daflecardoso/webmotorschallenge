@@ -31,7 +31,8 @@ class AppCoordinator {
     
     private func makeVehiclesViewController() -> VehiclesViewController {
         let vehicleService = VehicleService()
-        let vehicleRepository = VehicleRepository(service: vehicleService)
+        let context = appDelegate!.persistentContainer.viewContext
+        let vehicleRepository = VehicleRepository(service: vehicleService, context: context)
         let viewModel = VehiclesViewModel(vehicleRepository: vehicleRepository)
         return VehiclesViewController(viewModel: viewModel)
     }

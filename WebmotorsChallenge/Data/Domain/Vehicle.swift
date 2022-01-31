@@ -9,15 +9,15 @@ import Foundation
 
 struct Vehicle: Decodable {
     let id: Int
-    let make: String
-    let model: String
-    let version: String
-    let image: String
+    let make: String?
+    let model: String?
+    let version: String?
+    let image: String?
     let km: Int
-    let price: String
+    let price: String?
     let yearModel: Int
     let yearFab: Int
-    let color: String
+    let color: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "ID"
@@ -32,9 +32,9 @@ struct Vehicle: Decodable {
         case color = "Color"
     }
     
-    var imageUrl: String { image.replacingOccurrences(of: "http://", with: "https://") }
+    var imageUrl: String? { image?.replacingOccurrences(of: "http://", with: "https://") }
     
-    var priceFormatted: String { Int(price.digits)?.toDecimalCoin() ?? "-" }
+    var priceFormatted: String { Int(price?.digits ?? "")?.toDecimalCoin() ?? "-" }
     
     var yearFormatted: String { "\(yearFab)/\(yearModel)" }
     
