@@ -25,7 +25,9 @@
 git clone git@github.com:daflecardoso/webmotorschallenge.git
 
 cd webmotorschallenge
+
 pod install
+
 open WebmotorsChallenge.xcworkspace
 ```
 
