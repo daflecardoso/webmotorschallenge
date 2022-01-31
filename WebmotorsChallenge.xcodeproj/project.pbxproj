@@ -58,6 +58,7 @@
 		D28B576A27A57E500031669F /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576927A57E500031669F /* VehicleTests.swift */; };
 		D2BCB60B27A85F5B001BB0E6 /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223127A8285A002C66DC /* VehicleRepository.swift */; };
 		D2BCB60D27A867BE001BB0E6 /* NSManagedObjectContextContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BCB60C27A867BE001BB0E6 /* NSManagedObjectContextContract.swift */; };
+		D2BCB60F27A868C3001BB0E6 /* architecture.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BCB60E27A868C3001BB0E6 /* architecture.png */; };
 		D2C6220E27A70240002C66DC /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6220D27A70240002C66DC /* ConstantsTests.swift */; };
 		D2C6221127A70320002C66DC /* NSObjectExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */; };
 		D2C6221527A7067B002C66DC /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */; };
@@ -153,6 +154,7 @@
 		D28B576627A4C03E0031669F /* VehicleDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailCells.swift; sourceTree = "<group>"; };
 		D28B576927A57E500031669F /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
 		D2BCB60C27A867BE001BB0E6 /* NSManagedObjectContextContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextContract.swift; sourceTree = "<group>"; };
+		D2BCB60E27A868C3001BB0E6 /* architecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = architecture.png; sourceTree = "<group>"; };
 		D2C6220D27A70240002C66DC /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionsTests.swift; sourceTree = "<group>"; };
 		D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				D2427CB627A4672B001FD697 /* LaunchScreen.storyboard */,
 				D2427CB927A4672B001FD697 /* Info.plist */,
 				D2C6223927A82CDE002C66DC /* webmotors.xcdatamodeld */,
+				D2BCB60E27A868C3001BB0E6 /* architecture.png */,
 			);
 			path = WebmotorsChallenge;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				D2808C3B27A585120042BAB5 /* Assets.xcassets in Resources */,
 				D2808C5B27A593AE0042BAB5 /* Rajdhani-Bold.ttf in Resources */,
 				D2808C5A27A593AE0042BAB5 /* Rajdhani-Medium.ttf in Resources */,
+				D2BCB60F27A868C3001BB0E6 /* architecture.png in Resources */,
 				D2427D1E27A4773E001FD697 /* vehicles_success_response.json in Resources */,
 				D2808C5827A593AE0042BAB5 /* Rajdhani-Regular.ttf in Resources */,
 			);
