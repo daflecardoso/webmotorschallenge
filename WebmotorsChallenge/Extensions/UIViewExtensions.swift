@@ -34,4 +34,11 @@ extension UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
+    
+    func layoutNeeded() {
+        let isTest = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+        if !isTest {
+            layoutIfNeeded()
+        }
+    }
 }

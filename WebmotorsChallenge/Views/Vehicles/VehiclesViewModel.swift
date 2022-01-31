@@ -27,7 +27,7 @@ class VehiclesViewModel: BaseViewModel {
         return _totalVehicles.asDriver(onErrorJustReturn: nil)
     }
     
-    var shouldRemoveAll = false
+    private var shouldRemoveAll = false
     private var isDataLoading: Bool = false
     private var pageNumber: Int = 0
     private var paginationFinished: Bool = false

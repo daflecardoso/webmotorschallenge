@@ -107,7 +107,7 @@ class VehiclesViewController: BaseViewController {
             $0.bottom.equalToSuperview().inset(80)
         }
         UIView.animate(withDuration: 1) { [unowned self] in
-            view.layoutIfNeeded()
+           view.layoutNeeded()
         }
     }
 }

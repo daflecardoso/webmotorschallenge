@@ -56,6 +56,8 @@
 		D28B576527A4BD750031669F /* VehicleDetailCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576427A4BD750031669F /* VehicleDetailCellType.swift */; };
 		D28B576727A4C03E0031669F /* VehicleDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576627A4C03E0031669F /* VehicleDetailCells.swift */; };
 		D28B576A27A57E500031669F /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B576927A57E500031669F /* VehicleTests.swift */; };
+		D2BCB60B27A85F5B001BB0E6 /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223127A8285A002C66DC /* VehicleRepository.swift */; };
+		D2BCB60D27A867BE001BB0E6 /* NSManagedObjectContextContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BCB60C27A867BE001BB0E6 /* NSManagedObjectContextContract.swift */; };
 		D2C6220E27A70240002C66DC /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6220D27A70240002C66DC /* ConstantsTests.swift */; };
 		D2C6221127A70320002C66DC /* NSObjectExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */; };
 		D2C6221527A7067B002C66DC /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */; };
@@ -69,10 +71,10 @@
 		D2C6222B27A807E4002C66DC /* VehicleDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222A27A807E4002C66DC /* VehicleDetailViewControllerTests.swift */; };
 		D2C6222D27A819E5002C66DC /* vehicles_error_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222C27A819E5002C66DC /* vehicles_error_response.json */; };
 		D2C6222F27A81A0C002C66DC /* vehicles_empty_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */; };
-		D2C6223227A8285A002C66DC /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223127A8285A002C66DC /* VehicleRepository.swift */; };
 		D2C6223427A82958002C66DC /* FakeVehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */; };
 		D2C6223B27A82CDE002C66DC /* webmotors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223927A82CDE002C66DC /* webmotors.xcdatamodeld */; };
 		D2C6223D27A83DCD002C66DC /* TotalVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223C27A83DCD002C66DC /* TotalVehiclesView.swift */; };
+		D2C6223F27A857FA002C66DC /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223E27A857FA002C66DC /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,7 @@
 		D28B576427A4BD750031669F /* VehicleDetailCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailCellType.swift; sourceTree = "<group>"; };
 		D28B576627A4C03E0031669F /* VehicleDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailCells.swift; sourceTree = "<group>"; };
 		D28B576927A57E500031669F /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
+		D2BCB60C27A867BE001BB0E6 /* NSManagedObjectContextContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextContract.swift; sourceTree = "<group>"; };
 		D2C6220D27A70240002C66DC /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		D2C6221027A70320002C66DC /* NSObjectExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionsTests.swift; sourceTree = "<group>"; };
 		D2C6221427A7067B002C66DC /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeVehicleRepository.swift; sourceTree = "<group>"; };
 		D2C6223A27A82CDE002C66DC /* webmotors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = webmotors.xcdatamodel; sourceTree = "<group>"; };
 		D2C6223C27A83DCD002C66DC /* TotalVehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalVehiclesView.swift; sourceTree = "<group>"; };
+		D2C6223E27A857FA002C66DC /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -289,6 +293,7 @@
 				D2427CE327A46A9A001FD697 /* BaseViewController.swift */,
 				D2427CE527A46AA9001FD697 /* BaseViewModel.swift */,
 				D2427D2627A48252001FD697 /* BaseTableViewCell.swift */,
+				D2C6223E27A857FA002C66DC /* BaseRepository.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				D2427D1327A476A9001FD697 /* Service */,
 				D2C6223027A82845002C66DC /* Repository */,
 				D2427D1127A4769D001FD697 /* APIProvider.swift */,
+				D2BCB60C27A867BE001BB0E6 /* NSManagedObjectContextContract.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -771,11 +777,12 @@
 				D28B576727A4C03E0031669F /* VehicleDetailCells.swift in Sources */,
 				D2C6222427A71281002C66DC /* UIApplicationExtensions.swift in Sources */,
 				D2427D2127A477CB001FD697 /* Vehicle.swift in Sources */,
+				D2BCB60B27A85F5B001BB0E6 /* VehicleRepository.swift in Sources */,
 				D2427D3F27A49FD0001FD697 /* VehicleDetailViewModel.swift in Sources */,
 				D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */,
 				D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */,
 				D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */,
-				D2C6223227A8285A002C66DC /* VehicleRepository.swift in Sources */,
+				D2BCB60D27A867BE001BB0E6 /* NSManagedObjectContextContract.swift in Sources */,
 				D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */,
 				D2427CEE27A46BF9001FD697 /* CenterLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
@@ -800,6 +807,7 @@
 				D2427CFE27A46C61001FD697 /* UIViewExtensions.swift in Sources */,
 				D2427CFB27A46C61001FD697 /* StringExtensions.swift in Sources */,
 				D2427D2D27A484D4001FD697 /* UIImageView+Extensions.swift in Sources */,
+				D2C6223F27A857FA002C66DC /* BaseRepository.swift in Sources */,
 				D2427D3D27A49FA8001FD697 /* VehicleDetailViewController.swift in Sources */,
 				D2427CE927A46AF8001FD697 /* AppCoordinator.swift in Sources */,
 				D2427D1227A4769D001FD697 /* APIProvider.swift in Sources */,
