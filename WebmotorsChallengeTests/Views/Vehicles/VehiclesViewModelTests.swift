@@ -12,17 +12,21 @@ import RxCocoa
 
 class VehiclesViewModelTests: XCTestCase {
     
+    private func makeViewModelInstance(type: FakeVehiclesService.RequestType) -> VehiclesViewModel {
+        let fakeService = FakeVehiclesService(type: type)
+        let fakeRepository = FakeVehiclesRepository(service: fakeService)
+        return VehiclesViewModel(vehicleRepository: fakeRepository)
+    }
+    
     func testSuccessVehicles() {
-        let service = FakeVehiclesService(type: .success)
-        let viewModel = VehiclesViewModel(vehicleService: service)
+        let viewModel = makeViewModelInstance(type: .success)
         viewModel.fetch()
         let items = viewModel.items
         XCTAssertEqual(items.count, 10)
     }
     
     func testSuccessPaginating() {
-        let service = FakeVehiclesService(type: .success)
-        let viewModel = VehiclesViewModel(vehicleService: service)
+        let viewModel = makeViewModelInstance(type: .success)
         viewModel.fetch()
         viewModel.fetch()
         viewModel.fetch()
@@ -31,8 +35,7 @@ class VehiclesViewModelTests: XCTestCase {
     }
     
     func testSuccessRefreshing() {
-        let service = FakeVehiclesService(type: .success)
-        let viewModel = VehiclesViewModel(vehicleService: service)
+        let viewModel = makeViewModelInstance(type: .success)
         viewModel.fetch()
         viewModel.fetch()
         viewModel.fetch()
@@ -42,15 +45,13 @@ class VehiclesViewModelTests: XCTestCase {
     }
     
     func testSuccessEmpty() {
-        let service = FakeVehiclesService(type: .success)
-        let viewModel = VehiclesViewModel(vehicleService: service)
+        let viewModel = makeViewModelInstance(type: .empty)
         let items = viewModel.items
         XCTAssertEqual(items.count, 0)
     }
     
     func testRequestError() {
-        let service = FakeVehiclesService(type: .error)
-        let viewModel = VehiclesViewModel(vehicleService: service)
+        let viewModel = makeViewModelInstance(type: .error)
         viewModel.fetch()
         let items = viewModel.items
         XCTAssertEqual(items.count, 0)

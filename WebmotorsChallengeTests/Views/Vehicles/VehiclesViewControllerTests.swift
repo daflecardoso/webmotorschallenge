@@ -30,7 +30,8 @@ class VehiclesViewControllerTests: XCTestCase {
     
     private func makeViewInstance(type: FakeVehiclesService.RequestType) -> VehiclesViewController {
         let fakeService = FakeVehiclesService(type: type)
-        let viewModel = VehiclesViewModel(vehicleService: fakeService)
+        let fakeRepository = FakeVehiclesRepository(service: fakeService)
+        let viewModel = VehiclesViewModel(vehicleRepository: fakeRepository)
         return VehiclesViewController(viewModel: viewModel)
     }
     

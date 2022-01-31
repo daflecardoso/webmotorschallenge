@@ -69,6 +69,8 @@
 		D2C6222B27A807E4002C66DC /* VehicleDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6222A27A807E4002C66DC /* VehicleDetailViewControllerTests.swift */; };
 		D2C6222D27A819E5002C66DC /* vehicles_error_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222C27A819E5002C66DC /* vehicles_error_response.json */; };
 		D2C6222F27A81A0C002C66DC /* vehicles_empty_response.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */; };
+		D2C6223227A8285A002C66DC /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223127A8285A002C66DC /* VehicleRepository.swift */; };
+		D2C6223427A82958002C66DC /* FakeVehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,8 @@
 		D2C6222A27A807E4002C66DC /* VehicleDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		D2C6222C27A819E5002C66DC /* vehicles_error_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_error_response.json; sourceTree = "<group>"; };
 		D2C6222E27A81A0C002C66DC /* vehicles_empty_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vehicles_empty_response.json; sourceTree = "<group>"; };
+		D2C6223127A8285A002C66DC /* VehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRepository.swift; sourceTree = "<group>"; };
+		D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeVehicleRepository.swift; sourceTree = "<group>"; };
 		D5EFBE3FB7A046E4CD18029B /* Pods-WebmotorsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallengeTests/Pods-WebmotorsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4901F7478F6FD78B2D16EC /* Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebmotorsChallenge-WebmotorsChallengeUITests/Pods-WebmotorsChallenge-WebmotorsChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +351,7 @@
 			children = (
 				D2427D1F27A477C3001FD697 /* Domain */,
 				D2427D1327A476A9001FD697 /* Service */,
+				D2C6223027A82845002C66DC /* Repository */,
 				D2427D1127A4769D001FD697 /* APIProvider.swift */,
 			);
 			path = Data;
@@ -476,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C6222127A71179002C66DC /* FakeVehiclesService.swift */,
+				D2C6223327A82958002C66DC /* FakeVehicleRepository.swift */,
 				D2C6221F27A71101002C66DC /* VehiclesViewControllerTests.swift */,
 				D2C6221D27A70E54002C66DC /* VehiclesViewModelTests.swift */,
 			);
@@ -489,6 +495,14 @@
 				D2C6222827A80241002C66DC /* VehicleDetailViewModelTests.swift */,
 			);
 			path = VehicleDetail;
+			sourceTree = "<group>";
+		};
+		D2C6223027A82845002C66DC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6223127A8285A002C66DC /* VehicleRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FD380CCF8916C657224CCF75 /* Frameworks */ = {
@@ -755,6 +769,7 @@
 				D2427D0B27A46CC4001FD697 /* ResponseApiError.swift in Sources */,
 				D2427CF927A46C61001FD697 /* UIColorExtensions.swift in Sources */,
 				D2427CFA27A46C61001FD697 /* NSObjectExtensions.swift in Sources */,
+				D2C6223227A8285A002C66DC /* VehicleRepository.swift in Sources */,
 				D2427D2727A48252001FD697 /* BaseTableViewCell.swift in Sources */,
 				D2427CEE27A46BF9001FD697 /* CenterLoadingView.swift in Sources */,
 				D2427D1727A476D0001FD697 /* VehicleAPI.swift in Sources */,
@@ -792,6 +807,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28B576A27A57E500031669F /* VehicleTests.swift in Sources */,
+				D2C6223427A82958002C66DC /* FakeVehicleRepository.swift in Sources */,
 				D2C6222B27A807E4002C66DC /* VehicleDetailViewControllerTests.swift in Sources */,
 				D2C6220E27A70240002C66DC /* ConstantsTests.swift in Sources */,
 				D2C6221727A7079D002C66DC /* FormattableNumericTests.swift in Sources */,

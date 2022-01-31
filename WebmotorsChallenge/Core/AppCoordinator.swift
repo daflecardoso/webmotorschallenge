@@ -31,7 +31,8 @@ class AppCoordinator {
     
     private func makeVehiclesViewController() -> VehiclesViewController {
         let vehicleService = VehicleService()
-        let viewModel = VehiclesViewModel(vehicleService: vehicleService)
+        let vehicleRepository = VehicleRepository(service: vehicleService)
+        let viewModel = VehiclesViewModel(vehicleRepository: vehicleRepository)
         return VehiclesViewController(viewModel: viewModel)
     }
     

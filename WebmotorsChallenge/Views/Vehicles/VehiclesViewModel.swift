@@ -11,10 +11,10 @@ import RxCocoa
 
 class VehiclesViewModel: BaseViewModel {
     
-    private let vehicleService: VehicleServiceContract
+    private let vehicleRepository: VehicleRepositoryContract
     
-    init(vehicleService: VehicleServiceContract) {
-        self.vehicleService = vehicleService
+    init(vehicleRepository: VehicleRepositoryContract) {
+        self.vehicleRepository = vehicleRepository
     }
     
     private(set) var items: [Vehicle] = []
@@ -45,7 +45,7 @@ class VehiclesViewModel: BaseViewModel {
         self.isDataLoading = true
         self.pageNumber = (self.pageNumber + 1)
         
-        vehicleService
+        vehicleRepository
             .vehicles(page: pageNumber)
             .paginating(isPaginating)
             .subscribe(onSuccess: { [unowned self] vehicles in
