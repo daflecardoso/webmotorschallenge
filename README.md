@@ -22,7 +22,7 @@
 ## Run Steps:
 
 ```sh
-git clone git@github.com:daflecardoso/webmotorschallenge.git
+git clone https://github.com/daflecardoso/webmotorschallenge.git
 
 cd webmotorschallenge
 
